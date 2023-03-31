@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html{
+  font-size: 90%;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, blue, purple);
+  }
+  
+  .form_container {
+    display: grid;
+    gap: 2rem;
+    height: 34rem;
+    width: 30rem;
+    background-color: whitesmoke;
+    grid-template-columns: 25rem;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0.8rem;
+  }
+  
+  .header_login,
+  .submit_login {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+  }
+  .submit_login {
+    height: 3rem;
+    width: 15rem;
+    border-radius: 1rem;
+    border: 0.1rem solid darkkhaki;
+    background-color: green;
+    color: white;
+  }
+  .email_login,
+  .pass_login {
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #bfbfbf;
+    border-bottom-width: 0.2rem;
+    transition: all 0.2s ease;
+    padding: 0rem;
+    caret-color: #5372f0;
+  }
+  .para_class {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .forget {
+    padding-left: 0.5rem;
+  }
+  .links {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+ form input[type="email"],
+ form input[type="password"] {
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  input:focus {
+    border-color: #5372f0;
+  }
+  
+  input::placeholder {
+    font-weight: bold;
+    color: rgb(173, 146, 146);
+  }
+  
+  input::placeholder , .forget , .para_class  {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+ .header_login  {
+  font-size: 1.9rem;
+  font-family: 'Montserrat', sans-serif;
+  
+ }
+
+ .submit_login{
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+ @media(max-width:590px){
+  html{
+    font-size: 70%;
+  }
+ }
+
+ @media(max-width:362px){
+  html{
+    font-size: 50%;
+  }
+ }
